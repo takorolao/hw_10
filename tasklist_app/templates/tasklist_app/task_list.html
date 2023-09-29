@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Лист задач</title>
+</head>
+<body>
+  <h1>Лист задач</h1>
+  <ul id="task-list">
+    {% for task in tasks %}
+    <li>
+      {{ task.title }} 
+    </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Создать задачу</title>
+</head>
+<body>
+  <h1>Создать задачу</h1>
+  <form method="POST" action="{% url 'task-create' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Создать</button>
+  </form>
+</body>
+</html>
